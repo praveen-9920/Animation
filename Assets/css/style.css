@@ -1,0 +1,65 @@
+body{
+    margin: 0%;
+}
+nav{
+    background-color: aqua
+}
+h1{
+    color: white;
+}
+.flex-container{
+    display: flex;
+}
+a{
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    transition: 2s all;
+    text-decoration: none;
+}
+a:hover{
+    background-color: cyan;
+    color: black;
+}
+.flex-item1{
+    flex: 20%;
+}
+.flex-item2{
+    flex: 80%;
+    background-color: red;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    display: inline;
+    margin-left: 50px;
+}
+
+
+.slider{
+    height: 600px;
+    background-image: url(../images/1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    animation-name: animate;
+    animation-duration: 8s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes animate{
+    from{
+        background-image: url(../images/2.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    to{
+        background-image: url(../images/3.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
